@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Design Tooling 2026 Research</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --fg: #0f172a;
+      --muted: #475569;
+      --card: #ffffff;
+      --line: #e2e8f0;
+      --accent: #0f766e;
+      --accent-2: #134e4a;
+    }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--fg);
+      background:
+        radial-gradient(circle at 10% 0%, #ccfbf1 0%, transparent 40%),
+        radial-gradient(circle at 90% 0%, #e0f2fe 0%, transparent 40%),
+        var(--bg);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 70px; }
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 20px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    }
+    .card h2 { margin: 0 0 8px; font-size: 1.05rem; }
+    ul { margin: 0; padding-left: 18px; }
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin: 8px 12px 16px 0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover { filter: brightness(0.95); text-decoration: none; }
+    .chart { width: 100%; border: 1px solid var(--line); border-radius: 10px; background: #fff; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>AI Design Tooling 2026</h1>
+    <p class="muted">Evidence, transparency, and differentiation analysis across 25 AI design and UX research tools.</p>
+
+    <a class="btn" href="report.html">Read Full Report (HTML)</a>
+    <a class="btn" href="report.md">Read Full Report (Markdown)</a>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Open Source Research Files</h2>
+        <ul>
+          <li><a href="SCHEMA.md">Classification schema</a></li>
+          <li><a href="data/raw/tool_list.csv">Raw tool list (CSV)</a></li>
+          <li><a href="data/processed/classified_tools.csv">Classified tools (CSV)</a></li>
+          <li><a href="outputs/figures/summary_metrics.json">Summary metrics (JSON)</a></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Figures and Distributions</h2>
+        <ul>
+          <li><a href="outputs/figures/architectural_evidence_level_distribution.svg">Architectural evidence distribution</a></li>
+          <li><a href="outputs/figures/classification_confidence_distribution.svg">Classification confidence distribution</a></li>
+          <li><a href="outputs/figures/estimated_differentiation_surface_distribution.svg">Differentiation surface distribution</a></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top: 14px;">
+      <h2>Preview</h2>
+      <img class="chart" src="outputs/figures/estimated_differentiation_surface_distribution.svg" alt="Estimated differentiation surface distribution" />
+    </section>
+  </main>
+</body>
+</html>
