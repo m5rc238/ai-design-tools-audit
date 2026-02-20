@@ -12,6 +12,7 @@ Open-source audit framework and research repository for evaluating AI design and
 ## Current Outputs
 
 - `report.md` and `report.html`: latest synthesized findings
+- `actionable-insights.md` and `actionable-insights.html`: focused action plan with OST, assumptions, gaps, and tests
 - `SCHEMA.md`: classification schema definitions
 - `data/raw/tool_list.csv`: source tool list and evidence references
 - `data/processed/classified_tools.csv`: classified dataset

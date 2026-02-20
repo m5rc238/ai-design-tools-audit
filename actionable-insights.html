@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Design Tooling 2026 Actionable Insights</title>
+  <style>
+    :root { --bg:#f6f7fb; --fg:#0f172a; --muted:#475569; --card:#ffffff; --line:#e2e8f0; --accent:#2563eb; }
+    body { margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6; }
+    .wrap { max-width:980px; margin:0 auto; padding:42px 22px 72px; }
+    h1 { font-size:2rem; margin:0 0 14px; }
+    h2 { font-size:1.28rem; margin:30px 0 10px; padding-top:8px; border-top:1px solid var(--line); }
+    h3 { font-size:1.05rem; margin:18px 0 6px; }
+    p { margin:8px 0 12px; }
+    ul, ol { margin:8px 0 14px 24px; }
+    li { margin:4px 0; }
+    code { background:#e8eefc; color:#0f172a; padding:1px 5px; border-radius:5px; }
+    a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
+    .muted { color:var(--muted); }
+    .diagram { width: 100%; height: auto; border:1px solid var(--line); border-radius:10px; background:#fff; padding:8px; box-sizing:border-box; }
+    .diagram text { font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; fill:#0f172a; font-size:12px; }
+    .diagram .title { font-size:14px; font-weight:600; }
+    .diagram .node { fill:#eff6ff; stroke:#93c5fd; stroke-width:1; rx:8; }
+    .diagram .outcome { fill:#dcfce7; stroke:#86efac; }
+    .diagram .opportunity { fill:#fef9c3; stroke:#fde68a; }
+    .diagram .solution { fill:#ede9fe; stroke:#c4b5fd; }
+    .diagram .experiment { fill:#ffe4e6; stroke:#fda4af; }
+    .diagram .edge { stroke:#64748b; stroke-width:1.3; fill:none; marker-end:url(#arrow); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>AI Design Tooling 2026: Actionable Insights</h1>
+    <p class="muted">Companion report focused on execution priorities, opportunity framing, assumptions, gaps, and test plan.</p>
+    <p><a href="index.html">Back to main page</a> · <a href="actionable-insights.md">Open Markdown version</a></p>
+
+    <section class="card">
+      <h2>1. Actionable Insights</h2>
+      <ul>
+        <li>Most defensibility signals are execution-led, not model-led.</li>
+        <li>Prioritize workflow ownership where team context accumulates over time.</li>
+        <li>Avoid treating "AI feature count" as a moat signal without retention or switching-cost evidence.</li>
+      </ul>
+    </section>
+
+    <h2>2. Opportunity Solution Tree (OST)</h2>
+    <svg class="diagram" viewBox="0 0 940 560" role="img" aria-label="Opportunity Solution Tree diagram">
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L9,3 z" fill="#64748b"></path>
+        </marker>
+      </defs>
+      <text class="title" x="20" y="28">Opportunity Solution Tree</text>
+
+      <rect class="node outcome" x="20" y="60" width="260" height="56"></rect>
+      <text x="34" y="84">Outcome: Improve repeat usage</text>
+      <text x="34" y="102">and reduce switching risk</text>
+
+      <rect class="node opportunity" x="340" y="20" width="260" height="56"></rect>
+      <text x="354" y="44">Weak architecture transparency</text>
+      <text x="354" y="62">across competitors</text>
+
+      <rect class="node opportunity" x="340" y="90" width="260" height="56"></rect>
+      <text x="354" y="114">Crowded research synthesis</text>
+      <text x="354" y="132">with shallow differentiation</text>
+
+      <rect class="node opportunity" x="340" y="160" width="260" height="56"></rect>
+      <text x="354" y="184">Limited longitudinal context</text>
+      <text x="354" y="202">lock-in evidence</text>
+
+      <rect class="node solution" x="660" y="20" width="260" height="56"></rect>
+      <text x="674" y="44">Solution: Context memory</text>
+      <text x="674" y="62">across studies/projects</text>
+
+      <rect class="node solution" x="660" y="90" width="260" height="56"></rect>
+      <text x="674" y="114">Solution: Decision trails</text>
+      <text x="674" y="132">for recommendation rationale</text>
+
+      <rect class="node solution" x="660" y="160" width="260" height="56"></rect>
+      <text x="674" y="184">Solution: Integration-first</text>
+      <text x="674" y="202">ecosystem embedding</text>
+
+      <rect class="node experiment" x="660" y="260" width="260" height="56"></rect>
+      <text x="674" y="284">Experiment: retention lift</text>
+      <text x="674" y="302">with persistent context</text>
+
+      <rect class="node experiment" x="660" y="330" width="260" height="56"></rect>
+      <text x="674" y="354">Experiment: trust + acceptance</text>
+      <text x="674" y="372">with visible decision trail</text>
+
+      <rect class="node experiment" x="660" y="400" width="260" height="56"></rect>
+      <text x="674" y="424">Experiment: activation + W4</text>
+      <text x="674" y="442">retention with integrations</text>
+
+      <path class="edge" d="M280 88 C310 88, 320 48, 340 48"></path>
+      <path class="edge" d="M280 88 C315 88, 320 118, 340 118"></path>
+      <path class="edge" d="M280 88 C315 88, 320 188, 340 188"></path>
+
+      <path class="edge" d="M600 48 C620 48, 640 48, 660 48"></path>
+      <path class="edge" d="M600 118 C620 118, 640 118, 660 118"></path>
+      <path class="edge" d="M600 188 C620 188, 640 188, 660 188"></path>
+
+      <path class="edge" d="M790 216 C790 230, 790 240, 790 260"></path>
+      <path class="edge" d="M790 216 C790 260, 790 300, 790 330"></path>
+      <path class="edge" d="M790 216 C790 300, 790 360, 790 400"></path>
+    </svg>
+
+    <h3>Opportunity</h3>
+    <p>Increase defensibility and decision quality in AI design/research workflows.</p>
+
+    <h3>Outcome</h3>
+    <p>Improve repeat usage and reduce switching risk for core team workflows.</p>
+
+    <h3>Opportunity Nodes</h3>
+    <ul>
+      <li>Weak architecture transparency across competitors.</li>
+      <li>Crowded research synthesis segment with shallow differentiation.</li>
+      <li>Limited evidence of longitudinal context lock-in.</li>
+    </ul>
+
+    <h3>Candidate Solutions</h3>
+    <ul>
+      <li>Add context memory across studies/projects with explicit retrieval UX.</li>
+      <li>Build workflow-native decision trails (why a recommendation was made).</li>
+      <li>Strengthen ecosystem embedding (exports, sync, and downstream integrations).</li>
+    </ul>
+
+    <h3>Experiments</h3>
+    <ul>
+      <li>Compare retention and repeat task completion with/without persistent context memory.</li>
+      <li>Test whether decision-trail visibility increases trust and acceptance of recommendations.</li>
+      <li>Test if integration-first onboarding reduces time-to-value and churn risk.</li>
+    </ul>
+
+    <h2>3. Core Assumptions</h2>
+    <ul>
+      <li>Teams value continuity of context more than one-off generation quality.</li>
+      <li>Workflow depth and integration quality create stronger switching costs than standalone AI features.</li>
+      <li>Better transparency (even partial) improves confidence and adoption in research decisions.</li>
+    </ul>
+
+    <h2>4. Current Gaps</h2>
+    <ul>
+      <li>No direct user-level evidence in this repo for retention drivers.</li>
+      <li>Limited architecture disclosures constrain confidence in hard-moat claims.</li>
+      <li>Competitive benchmarks are snapshot-based, not longitudinal.</li>
+      <li>No quantified test backlog tied to expected business impact.</li>
+    </ul>
+
+    <h2>5. What to Test Next</h2>
+    <ol>
+      <li>Persistence test: measure repeat usage lift from longitudinal context memory.</li>
+      <li>Trust test: measure recommendation acceptance with and without transparent decision trails.</li>
+      <li>Integration test: measure activation and week-4 retention for integration-first onboarding.</li>
+      <li>Differentiation test: compare switching intent before/after introducing workflow lock-in features.</li>
+      <li>Evidence quality test: track confidence score changes as new citations are added.</li>
+    </ol>
+
+    <h2>6. Success Metrics</h2>
+    <ul>
+      <li>Weekly active team usage on recurring workflows.</li>
+      <li>Week-4 and week-8 retention for research/design teams.</li>
+      <li>Recommendation acceptance rate in synthesis workflows.</li>
+      <li>Time-to-value for first integrated workflow completion.</li>
+      <li>Self-reported switching difficulty over time.</li>
+    </ul>
+  </main>
+</body>
+</html>
