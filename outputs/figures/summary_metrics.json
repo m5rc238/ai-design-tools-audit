@@ -1,0 +1,35 @@
+{
+  "core_capability_layer_inferred": {
+    "Orchestrated pipeline (multiple models chained)": 5,
+    "Unknown": 6,
+    "LLM wrapper (API-based)": 11,
+    "Agentic workflow": 3
+  },
+  "execution_model_inferred": {
+    "Hybrid": 20,
+    "Chat interface": 3,
+    "API-first platform": 1,
+    "Autonomous workflow (multi-step without user prompting)": 1
+  },
+  "value_layer_inferred": {
+    "Multiple": 6,
+    "UI generation": 4,
+    "Research synthesis": 11,
+    "Code generation": 2,
+    "Testing / validation": 2
+  },
+  "architectural_evidence_level": {
+    "Marketing-level AI claim only": 23,
+    "Named external model provider": 2
+  },
+  "classification_confidence": {
+    "Medium": 17,
+    "Low": 6,
+    "High": 2
+  },
+  "estimated_differentiation_surface": {
+    "medium": 15,
+    "low": 4,
+    "high": 6
+  }
+}

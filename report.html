@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Design Tooling 2026 Report</title>
+  <style>
+    :root { --bg:#f6f7fb; --fg:#0f172a; --muted:#475569; --card:#ffffff; --line:#e2e8f0; --accent:#2563eb; }
+    body { margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6; }
+    .wrap { max-width:980px; margin:0 auto; padding:42px 22px 72px; }
+    h1 { font-size:2rem; margin:0 0 14px; }
+    h2 { font-size:1.28rem; margin:30px 0 10px; padding-top:8px; border-top:1px solid var(--line); }
+    p { margin:8px 0 12px; }
+    ul, ol { margin:8px 0 14px 24px; }
+    li { margin:4px 0; }
+    code { background:#e8eefc; color:#0f172a; padding:1px 5px; border-radius:5px; }
+    .note { color:var(--muted); font-size:.96rem; }
+    .charts { display:grid; grid-template-columns:1fr; gap:16px; margin-top:8px; }
+    .chart { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px; }
+    .chart img { width:100%; height:auto; border-radius:6px; }
+    a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+<h1>AI Design Tooling 2026: Evidence, Transparency, and Differentiation</h1>
+<h2>Executive Summary</h2>
+<p>This report analyzes 25 AI-powered product design and UX research tools using a citation-backed dataset and conservative classification rules. The post-adversarial distribution of <code>estimated_differentiation_surface</code> is <code>high: 6</code>, <code>medium: 15</code>, and <code>low: 4</code>, indicating that most tools currently differentiate through workflow execution and embedding rather than hard model-level defensibility.</p>
+<p>Transparency remains limited: <code>23/25</code> tools are in <code>Marketing-level AI claim only</code>, while only <code>2/25</code> explicitly name external model providers. Confidence is mostly <code>Medium</code> (<code>17/25</code>), reflecting observable feature behavior with limited architectural disclosure.</p>
+<h2>Methodology</h2>
+<p>1. Dataset scope: 25 tools with explicit AI positioning relevant to product design, UI/UX generation, or UX research.</p>
+<p>2. Fact base: citation-backed claims in <code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/data/raw/tool_list.csv</code>.</p>
+<p>3. Classification base: SCHEMA v2 fields in <code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/data/processed/classified_tools.csv</code>.</p>
+<p>4. Strategic pass: per-tool evaluation of <code>proprietary_data_moat</code>, <code>workflow_depth</code>, <code>ecosystem_embedding</code>, <code>switching_cost_signal</code>, and <code>estimated_differentiation_surface</code>.</p>
+<p>5. Adversarial revisions: <code>UserTesting</code>, <code>Dovetail</code>, and <code>Looppanel</code> were challenged and downgraded from <code>high</code> to <code>medium</code> differentiation surface when defensibility appeared orchestration-led.</p>
+<p>6. Rule of conservatism: if a signal was not directly observable from existing cited evidence, it was downgraded or labeled <code>unknown</code>.</p>
+<h2>Transparency Analysis</h2>
+<p>Observed architectural evidence distribution (n=25):</p>
+<ul>
+<li><code>Marketing-level AI claim only<code>: 23 (92%)</li>
+<li><code>Named external model provider<code>: 2 (8%)</li>
+</ul>
+<p>Observed confidence distribution (n=25):</p>
+<ul>
+<li><code>High<code>: 2 (8%)</li>
+<li><code>Medium<code>: 17 (68%)</li>
+<li><code>Low<code>: 6 (24%)</li>
+<li><code>Unknown<code>: 0</li>
+</ul>
+<p>Interpretation:</p>
+<ul>
+<li>Vendor communication is primarily outcome-focused, not architecture-focused.</li>
+<li>Most tools can be described functionally, but not deeply verified at the model/stack level.</li>
+<li>Confidence remains moderate where behavior is clear but technical internals are opaque.</li>
+</ul>
+<p>Supporting artifacts:</p>
+<ul>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/architectural_evidence_level_distribution.svg<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/architectural_evidence_level_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/classification_confidence_distribution.svg<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/classification_confidence_distribution.csv<code></li>
+</ul>
+<h2>Differentiation Surface Analysis</h2>
+<p>Post-adversarial differentiation distribution (n=25):</p>
+<ul>
+<li><code>High<code>: 6 (24%)</li>
+<li><code>Medium<code>: 15 (60%)</li>
+<li><code>Low<code>: 4 (16%)</li>
+</ul>
+<p>Interpretation:</p>
+<ul>
+<li>High differentiation appears where workflow context plausibly compounds over repeated team usage.</li>
+<li>Medium differentiation dominates: strong orchestration and integration depth, but limited hard moat evidence.</li>
+<li>Low differentiation is concentrated in prompt-generation experiences with weaker lock-in signals.</li>
+</ul>
+<p>Supporting artifacts:</p>
+<ul>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/estimated_differentiation_surface_distribution.svg<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/estimated_differentiation_surface_distribution.csv<code></li>
+</ul>
+<h2>Key Findings</h2>
+<ul>
+<li><code>20/25<code> tools use a <code>Hybrid<code> execution model, suggesting AI is mostly embedded in broader product workflows.</li>
+<li><code>11/25<code> tools are concentrated in <code>Research synthesis<code>, making it the most crowded value layer.</li>
+<li>Model-level uniqueness is rarely visible in public evidence, reducing confidence in strong proprietary AI defensibility claims.</li>
+<li>Differentiation claims are most credible when tied to repeat workflow context, not AI feature count alone.</li>
+</ul>
+<p>Supporting artifacts:</p>
+<ul>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/execution_model_inferred_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/value_layer_inferred_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/core_capability_layer_inferred_distribution.csv<code></li>
+</ul>
+<h2>What This Reveals</h2>
+<p>In this dataset, differentiation in AI design tooling appears to live primarily in workflow ownership and context accumulation, not in clearly documented model exclusivity. Shared foundation-model access likely compresses model-layer advantage; defensibility shifts toward where teams run recurring work, store longitudinal insight artifacts, and integrate decisions into operational pipelines.</p>
+<p>Conservative strategic takeaway:</p>
+<ul>
+<li>Treat many current AI advantages as execution and distribution advantages unless explicit technical moat evidence is available.</li>
+</ul>
+<h2>Limitations</h2>
+<ul>
+<li>Public sources are uneven in technical detail; architecture-level conclusions are constrained.</li>
+<li>Some cited pages are marketing-heavy and can change over time.</li>
+<li>This is an evidence-bound snapshot, not a performance benchmark or pricing/value assessment.</li>
+<li>Distribution labels reflect defensibility confidence, not absolute product quality.</li>
+</ul>
+<h2>Appendix</h2>
+<p>Primary datasets:</p>
+<ul>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/data/raw/tool_list.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/data/processed/classified_tools.csv<code></li>
+</ul>
+<p>Summary metrics:</p>
+<ul>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/summary_metrics.json<code></li>
+</ul>
+<p>Charts (SVG):</p>
+<ul>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/architectural_evidence_level_distribution.svg<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/classification_confidence_distribution.svg<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/estimated_differentiation_surface_distribution.svg<code></li>
+</ul>
+<p>Chart data (CSV):</p>
+<ul>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/architectural_evidence_level_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/classification_confidence_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/estimated_differentiation_surface_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/core_capability_layer_inferred_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/execution_model_inferred_distribution.csv<code></li>
+<li><code>/Users/ahkeewan/Documents/Projects/ai-design-tools-agent-eval/outputs/figures/value_layer_inferred_distribution.csv<code></li>
+</ul>
+<h2>Chart Preview</h2>
+<p class="note">These visuals are generated from the CSV distributions in <code>outputs/figures</code>.</p>
+<section class="charts">
+<article class="chart">
+<h3>Architectural Evidence Level Distribution</h3>
+<img src="outputs/figures/architectural_evidence_level_distribution.svg" alt="Architectural Evidence Level Distribution" />
+</article>
+<article class="chart">
+<h3>Classification Confidence Distribution</h3>
+<img src="outputs/figures/classification_confidence_distribution.svg" alt="Classification Confidence Distribution" />
+</article>
+<article class="chart">
+<h3>Estimated Differentiation Surface Distribution</h3>
+<img src="outputs/figures/estimated_differentiation_surface_distribution.svg" alt="Estimated Differentiation Surface Distribution" />
+</article>
+</section>
+  </main>
+</body>
+</html>

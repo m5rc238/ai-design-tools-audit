@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490.0" y="38" text-anchor="middle" font-size="24" font-family="Arial" fill="#111">Differentiation Surface Distribution (n=25)</text>
+<line x1="80" y1="400" x2="940" y2="400" stroke="#333" stroke-width="2"/>
+<line x1="80" y1="400" x2="80" y2="70" stroke="#333" stroke-width="2"/>
+<line x1="74" y1="400.0" x2="80" y2="400.0" stroke="#333"/>
+<text x="70" y="405.0" text-anchor="end" font-size="12" font-family="Arial" fill="#444">0</text>
+<line x1="74" y1="334.0" x2="80" y2="334.0" stroke="#333"/>
+<text x="70" y="339.0" text-anchor="end" font-size="12" font-family="Arial" fill="#444">2</text>
+<line x1="80" y1="334.0" x2="940" y2="334.0" stroke="#eee"/>
+<line x1="74" y1="268.0" x2="80" y2="268.0" stroke="#333"/>
+<text x="70" y="273.0" text-anchor="end" font-size="12" font-family="Arial" fill="#444">5</text>
+<line x1="80" y1="268.0" x2="940" y2="268.0" stroke="#eee"/>
+<line x1="74" y1="202.0" x2="80" y2="202.0" stroke="#333"/>
+<text x="70" y="207.0" text-anchor="end" font-size="12" font-family="Arial" fill="#444">7</text>
+<line x1="80" y1="202.0" x2="940" y2="202.0" stroke="#eee"/>
+<line x1="74" y1="136.0" x2="80" y2="136.0" stroke="#333"/>
+<text x="70" y="141.0" text-anchor="end" font-size="12" font-family="Arial" fill="#444">10</text>
+<line x1="80" y1="136.0" x2="940" y2="136.0" stroke="#eee"/>
+<line x1="74" y1="70.0" x2="80" y2="70.0" stroke="#333"/>
+<text x="70" y="75.0" text-anchor="end" font-size="12" font-family="Arial" fill="#444">12</text>
+<line x1="80" y1="70.0" x2="940" y2="70.0" stroke="#eee"/>
+<rect x="104.00" y="152.50" width="254.67" height="247.50" fill="#27AE60"/>
+<text x="231.33" y="144.50" text-anchor="middle" font-size="13" font-family="Arial">9</text>
+<text x="231.33" y="422" text-anchor="middle" font-size="13" font-family="Arial">high</text>
+<rect x="382.67" y="70.00" width="254.67" height="330.00" fill="#2F80ED"/>
+<text x="510.00" y="62.00" text-anchor="middle" font-size="13" font-family="Arial">12</text>
+<text x="510.00" y="422" text-anchor="middle" font-size="13" font-family="Arial">medium</text>
+<rect x="661.33" y="290.00" width="254.67" height="110.00" fill="#F2994A"/>
+<text x="788.67" y="282.00" text-anchor="middle" font-size="13" font-family="Arial">4</text>
+<text x="788.67" y="422" text-anchor="middle" font-size="13" font-family="Arial">low</text>
+</svg>
